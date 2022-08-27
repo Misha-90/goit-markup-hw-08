@@ -10,10 +10,12 @@
 }
 .offers__list {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 30px;
 }
 .offers__item {
 	position: relative;
+	width: 100%;
 }
 
 .offers__img-titel {

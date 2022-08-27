@@ -9,6 +9,9 @@ ol, ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 li {
@@ -29,7 +32,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -256,6 +259,7 @@ body {
 
 .features__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -279,7 +283,7 @@ body {
 }
 
 li.features__item {
-  min-width: 270px;
+  width: 100%;
 }
 
 .offers__title {
@@ -295,11 +299,13 @@ li.features__item {
 
 .offers__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .offers__item {
   position: relative;
+  width: 100%;
 }
 
 .offers__img-titel {
@@ -318,6 +324,7 @@ li.features__item {
 
 .team__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 

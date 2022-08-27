@@ -10,6 +10,7 @@
 
 .features__list {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 30px;
 }
 
@@ -25,5 +26,5 @@
 	color: var(--first-text-color);
 }
 li.features__item {
-    min-width: 270px;
+    width: 100%;
 }

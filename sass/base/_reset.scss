@@ -8,6 +8,9 @@ ol, ul {
 }
 img {
 	display: block;
+	max-width: 100%;
+	height: auto;
+	width: 100%;
 }
 li {
 	display: list-item;
