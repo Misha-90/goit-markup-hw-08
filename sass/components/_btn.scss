@@ -1,0 +1,16 @@
+.btn {
+    cursor: pointer;
+    height: 50px;
+    background-color: var(--accent-color);
+	text-align: center;
+	border-radius: 4px;
+	border: none;
+	display: flex;
+	align-items: center;
+	color: var(--second-text-color);
+	transition: var(--backgroun-tranzition);
+	&:hover, &:focus {
+	background-color: #188CE8;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+}

@@ -1,0 +1,121 @@
+.footer {
+	background-color: #2F303A;
+	padding: 60px 0;
+}
+.footer__logo {
+	font-family: "Raleway";
+	font-style: normal;
+	@include font(700, 26px, 30px, 0.03em);
+	color: #FFFFFF;
+}
+
+.footer__contact-addres {
+	margin-top: 20px;
+}
+
+.footer__item:not(:last-child) {
+	margin-bottom: 9px;
+}
+.footer__address-maps {
+	@include second-link();
+	color: var(--second-title-color);
+}
+.footer__address-mail {
+	@include second-link();
+	color: rgba(255, 255, 255, 0.6);
+}
+.footer__address-tel{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: rgba(255, 255, 255, 0.6);
+}
+.footer__contact-addres{font-style: normal;}
+
+.footer__box {
+	display: flex;
+	align-items: baseline;
+}
+.footer__join-box {
+	display: block;
+	margin-left: 70px;
+}
+
+.footer__join-title {
+	@include second-link();
+	text-transform: uppercase;
+	color: var(--second-title-color);
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+.footer__soc{ 
+	display: flex;
+	gap: 10px;
+}
+.footer__soc-link { 
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+	transition: var(--backgroun-tranzition);
+	&:hover, &:focus {
+	background-color: var(--accent-color);
+}
+}
+
+.footer__soc-icon {
+	fill: var(--icons-second-color);
+}
+
+
+.subscription__box {
+	margin-left: 121px;
+}
+
+.subscription__wrap {
+	display: flex;
+	gap: 10px;
+}
+
+.subscription__title {
+	@include second-link($fw:700, $lh:16px);
+	text-transform: uppercase;
+	color: var(--second-text-color);
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.subscription__text {
+	position: relative;
+	width: 358px;
+	height: 50px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background-color: transparent;
+	padding-left: 16px;
+	color: rgba(255, 255, 255, 0.6);
+	&:focus {
+	border: 1px solid var(--accent-color);
+	outline: none;
+	cursor: pointer;
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+.subscription__btn {
+	min-width: 200px;
+	margin: 0;
+	padding: 10px 28px 10px 28px;
+	justify-content: center;
+}
+
+.subscription__icon {
+	display: flex;
+	margin-left: 10px;
+	fill: #FFFFFF;
+}

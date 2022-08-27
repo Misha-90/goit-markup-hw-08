@@ -1,0 +1,31 @@
+.offers__title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+	text-align: center;
+	color: var(--first-title-color);
+	margin-top: 0;
+	margin-bottom: 50px;
+}
+.offers__list {
+	display: flex;
+	gap: 30px;
+}
+.offers__item {
+	position: relative;
+}
+
+.offers__img-titel {
+	font-size: 14px;
+	line-height: 1.14;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--second-title-color);
+	position: absolute;
+	bottom: 0;
+	padding: 27px 0;
+	background: rgba(47, 48, 58, 0.8);
+	width: 100%;
+	margin: 0;
+}
