@@ -957,7 +957,6 @@ li.features__item {
 }
 
 .mob-navigation__link {
-  display: flex;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
@@ -974,7 +973,7 @@ li.features__item {
 }
 
 .mob__contact-mail {
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
 
 .mob__mail {
@@ -995,22 +994,38 @@ li.features__item {
   font-size: 34px;
   line-height: 1.1764705882;
   letter-spacing: 0.02em;
-  color: var(--first-text-color);
-  margin-bottom: 32px;
-  transition: var(--color-tranzition);
-}
-.mob__tel:focus, .mob__tel:hover {
   color: var(--accent-color);
+  margin-bottom: 32px;
 }
 
 .mob__menu-btn-close {
+  cursor: pointer;
   margin-left: auto;
   padding: 0;
   border: none;
   background-color: transparent;
   display: flex;
+  transition: var(--color-tranzition);
+}
+.mob__menu-btn-close:focus, .mob__menu-btn-close:hover {
+  fill: var(--accent-color);
 }
 
 .mob__soc-list {
   display: flex;
+  margin-bottom: 48px;
+}
+
+.mob__soc-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.mob_soc-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */

@@ -28,7 +28,6 @@
     margin-bottom: 64px;
 }
 .mob-navigation__link {
-	display: flex;
 	@include first-link ($fs:40px, $lh:47px);
 	color: var(--first-title-color);
 	transition: var(--color-tranzition);
@@ -41,7 +40,7 @@
     margin-bottom: 32px;
 }
 .mob__contact-mail {
-    margin-bottom: 32px;
+    margin-bottom: 64px;
 }
 .mob__mail {
     @include first-link ($fs:24px, $lh:28px);
@@ -54,24 +53,39 @@
 }
 .mob__tel {
     @include first-link ($fs:34px, $lh:40px);
-    color: var(--first-text-color);
+    color: var(--accent-color);
     margin-bottom: 32px;
-    transition: var(--color-tranzition);
-	&:focus, &:hover {
-	color: var(--accent-color);
-}
+    // transition: var(--color-tranzition);
+// 	&:focus, &:hover {
+// 	color: var(--accent-color);
+// }
 
 }
 .mob__menu-btn-close {
+    cursor: pointer;
     margin-left: auto;
 	padding: 0;
 	border: none;
 	background-color: transparent;
 	display: flex;
+    transition: var(--color-tranzition);
+	&:focus, &:hover {
+	fill: var(--accent-color);
+}
 }
 
 .mob__soc-list {
     display: flex;
-    &:not(:last-child) {
-	gap: 20px;
+    margin-bottom: 48px;
+}
+
+.mob__soc-item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.mob_soc-link {
+    @include first-link ($fs:18px, $lh:22px);
+    color: var(--accent-color);
 }
