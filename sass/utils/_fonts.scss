@@ -1,0 +1,66 @@
+@mixin font ($fw, $fs, $lh, $ls) {
+    font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh / $fs;
+	letter-spacing: $ls;
+}
+@mixin first-title ($fw:900, $fs:44px, $lh:60px, $ls:0.06em){
+    font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh / $fs;
+	letter-spacing: $ls;
+}
+@mixin second-title ($fw:700, $fs:36px, $lh:42px, $ls:0.03em){
+    font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh / $fs;
+	letter-spacing: $ls;
+}
+@mixin third-title ($fw:500, $fs:16px, $lh:26px, $ls:0.03em){
+    font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh / $fs;
+	letter-spacing: $ls;
+}
+@mixin after-title ($fw:400, $fs:16px, $lh:30px, $ls:0.03em){
+    font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh / $fs;
+	letter-spacing: $ls;
+}
+@mixin text ($fw:400, $fs:18px, $lh:27px, $ls:0.03em){
+    font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh / $fs;
+	letter-spacing: $ls;
+}
+@mixin first-link ($fw:500, $fs:14px, $lh:16px, $ls:0.02em){
+    font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh / $fs;
+	letter-spacing: $ls;
+}
+@mixin second-link ($fw:400, $fs:14px, $lh:24px, $ls:0.03em){
+    font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh / $fs;
+	letter-spacing: $ls;
+}
+@mixin btn ($fw:700, $fs:16px, $lh:30px, $ls:0.06em){
+    font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh / $fs;
+	letter-spacing: $ls;
+}
+@mixin filter-btn ($fw:500, $fs:16px, $lh:26px, $ls:0.03em){
+    font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh / $fs;
+	letter-spacing: $ls;
+}
+@mixin input ($fw:400, $fs:16px, $lh:30px, $ls:0.01em){
+    font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh / $fs;
+	letter-spacing: $ls;
+}

@@ -1,8 +1,8 @@
 .hero {
-	max-width: 1600px;
+	width: 100%;
 	margin: 0 auto;
 	background-color: var(--first-background-color);
-	padding: 200px 0;
+	// padding: 200px 0;
 	background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -10,7 +10,7 @@
 .hero__title {
 	margin: 0 auto 30px;
 	max-width: 696px;
-	@include first-title ();
+	@include first-title ($fs:20px, $lh:32px);
 	text-align: center;
 	text-transform: uppercase;
 	color: var(--second-title-color);
@@ -22,4 +22,7 @@
 	@include btn ();
 }
 
+.hero.section {
+	padding: 118px 0;
+}
 

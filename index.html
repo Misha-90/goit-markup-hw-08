@@ -15,7 +15,8 @@
 		/>
 	</head>
 	<body>
-		<!-- <header class="header">
+		<!-- header -->
+		<header class="header">
 			<div class="container header__container">
 				<a href="./index.html" class="header__logo link">
 					<span class="logo">Web</span>Studio
@@ -31,16 +32,52 @@
 						<li class="header__contact-mail"><a href="mailto:info@devstudio.com" class="header__mail link"><svg class="header__contact-icon" width="16px" height="12px"><use href="./img/icon-header.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
 						<li class="header__contact-tel"><a href="tel:+380961111111" class="header__tel link"><svg class="header__contact-icon fone" width="10px" height="16px"><use href="./img/icon-header.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
 					</ul>
+					<button type="button" class="mob__menu-btn-open">
+						<svg class="mob__menu-open" width="40px" height="40px">
+							<use href="./img/icon-header.svg#icon-mob-menu-open"></use>
+						</svg>
+					</button>
+					
 			</div>
-		</header> -->
+			<div class="mob__menu is-hidden">
+				<div class="container">
+					<div class="mob-menu__top">
+					<button type="button" class="mob__menu-btn-close">
+						<svg class="mob__menu-close" width="40px" height="40px">
+							<use href="./img/icon-header.svg#icon-mob-menu-close"></use>
+						</svg>
+					</button>
+				<nav class="mob-navigation">
+						<ul class="mob-navigation__list list">
+							<li class="mob-navigation__item"><a href="./index.html" class="mob-navigation__link link ">Студія</a></li>
+							<li class="mob-navigation__item"><a href="./portfolio.html" class="mob-navigation__link link ">Портфоліо</a></li>
+							<li class="mob-navigation__item"><a href="" class="mob-navigation__link link">Контакти</a></li>
+						</ul>
+					</nav>
+					</div>
+					<div class="mob-menu__bottom">
+					<ul class="mob__contact list">
+						<li class="mob__contact-tel"><a href="tel:+380961111111" class="mob__tel link">+38 096 111 11 11</a></li>
+						<li class="mob__contact-mail"><a href="mailto:info@devstudio.com" class="mob__mail link">info@devstudio.com</a></li>
+					</ul>
+					<ul class="mob__soc-list list">
+						<li class="mob__soc-item"><a href="https://www.instagram.com/" class="mob_soc-link link">Instagram</a></li>
+						<li class="mob__soc-item"><a href="https://twitter.com/" class="mob_soc-link link">Twitter</a></li>
+						<li class="mob__soc-item"><a href="https://www.facebook.com/" class="mob_soc-link link">Facebook</a></li>
+						<li class="mob__soc-item"><a href="https://ua.linkedin.com/" class="mob_soc-link link">LinkedIn</a></li>
+					</ul>
+					</div>
+					</div>
+			</div>
+		</header>
 		<main>
-			<!--hero-->
-			<!-- <section class="hero section">
+			<!-- hero-->
+			<section class="hero section">
 				<div class="container">
 				<h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
 				<button type="button" class="hero__btn btn" data-modal-open>Замовити послугу</button>
 				</div>
-			</section> -->
+			</section>
 
 			<!--features-->
 			<section class="features section pb-none">
@@ -86,8 +123,8 @@
 				</ul>
 				</div>
 			</section>
-			<!-- offers -->
-			<section class="offers section">
+			<!--offers-->
+			<section class="offers offers__mob section">
 				<div class="container">
 				<h2 class="offers__title title">Чим ми займаємося</h2>
 				<ul class="offers__list list">
@@ -106,7 +143,7 @@
 				</ul>
 				</div>
 			</section>
-			<!--team-->
+			<!--team -->
 			<section class="team section">
 				<div class="container">
 				<h2 class="team__title title">Наша команда</h2>
@@ -199,7 +236,7 @@
 				</div>
 			</section>
 				<!-- regular customer -->
-		<!-- <section class="customer section">
+		<section class="customer section">
 			<div class="container">
 			<h2 class="title customer__title">Постійні клієнти</h2>
 			<ul class="list customer__list">
@@ -242,9 +279,9 @@
 			</ul>
 			</div>
 		</section>
-		</main> -->
+		</main>
 		<!--footer-->
-		<!-- <footer class="footer">
+		<footer class="footer">
 			<div class="container footer__box">
 				<div class="footer__logo-box">
 						<a href="./index.html" class="footer__logo link">
@@ -292,7 +329,7 @@
 				</form>
 				</div>
 			</div>
-		</footer> -->
+		</footer>
 		<!-- backdrop & modal-->
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
@@ -380,6 +417,7 @@
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>
 

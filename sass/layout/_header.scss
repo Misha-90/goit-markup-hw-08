@@ -1,5 +1,6 @@
 .header {
 	border-bottom: 1px solid #ECECEC;
+
 }
 
 .header__logo {
@@ -9,10 +10,13 @@
 	color: #000000;
 	margin-right: 93px;
 	align-items: center;
+	max-width: 134px;
+	max-height: 28px;
+	margin: 16px 15px;
 }
 
 .navigation__list {
-	display: flex;
+	display: none;
 }
 .navigation__item:not(:last-child) {
 	margin-right: 50px;
@@ -26,8 +30,9 @@
 	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
-	@include first-link ();
-	transition: var(--color-tranzition);
+		@include first-link ();
+		color: var(--first-title-color);
+		transition: var(--color-tranzition);
 	&:focus, &:hover {
 	color: var(--accent-color);
 }
@@ -42,7 +47,7 @@
 	margin-right: 50px;
 }
 .header__contact {	
-	display: flex;
+	display: none;
 	margin-left: auto;
 }
 
@@ -67,3 +72,4 @@
 	color: var(--accent-color);
 }
 }
+
