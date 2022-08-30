@@ -1,3 +1,10 @@
+@import './utils/variables';
+@import './utils/hiden';
+@import './utils/fonts';
+@import './utils/mixins';
+
+
+
 @import './base/reset';
 @import './base/comon';
 
@@ -10,11 +17,6 @@
 @import './components/btn';
 @import './components/current';
 
-
-@import './utils/variables';
-@import './utils/hiden';
-@import './utils/fonts';
-@import './utils/mixins';
 
 
 

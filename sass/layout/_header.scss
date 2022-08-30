@@ -8,15 +8,18 @@
 	font-family: "Raleway";
 	font-style: normal;
 	color: #000000;
-	margin-right: 93px;
 	align-items: center;
 	max-width: 134px;
 	max-height: 28px;
-	margin: 16px 15px;
+	@include mobile {};
+	@include tablet {	margin-right: 87px;};
+	@include desktop {	margin-right: 93px;};
 }
 
 .navigation__list {
 	display: none;
+	@include tablet {display: flex;};
+	@include desktop {display: flex;};
 }
 .navigation__item:not(:last-child) {
 	margin-right: 50px;
@@ -24,7 +27,9 @@
 
 .header__container {
 	display: flex;
-	align-items: center;}
+	align-items: center;
+}
+
 
 .navigation__link {
 	display: block;
@@ -49,10 +54,17 @@
 .header__contact {	
 	display: none;
 	margin-left: auto;
+	@include tablet {
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: 0;
+		margin-left: 96px;
+	}
+	@include desktop {display: flex;}
 }
 
 .header__tel {
-	@include first-link ();
+	@include first-link ($fs:12px, $lh:14px);
 	color: var(--first-text-color);
 	display: flex;
 	align-items: center;
@@ -63,13 +75,13 @@
 }
 
 .header__mail {
-	@include first-link ();
+	@include first-link ($fs:12px, $lh:14px);
 	color: var(--first-text-color);
 	display: flex;
 	align-items: center;
+	margin-bottom: 10px;
 	transition: var(--color-tranzition);
 	&:hover, &:focus {
 	color: var(--accent-color);
 }
 }
-
