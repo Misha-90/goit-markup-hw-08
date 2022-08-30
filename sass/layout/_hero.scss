@@ -13,7 +13,12 @@
 	@include first-title ($fs:20px, $lh:32px);
 	text-align: center;
 	text-transform: uppercase;
-	color: var(--second-title-color);
+	// color: var(--second-title-color);
+	color: red
+	// @include mobile {
+	// 	@include first-title ();
+	// 	max-width: 360px;
+	// };
 }
 .hero__btn {
 	display: block;

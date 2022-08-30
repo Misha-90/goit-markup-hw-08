@@ -933,6 +933,7 @@ li.features__item {
 
 .mob__menu {
   position: fixed;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
   background-color: var(--menu-background-color);
@@ -957,9 +958,10 @@ li.features__item {
 }
 
 .mob-navigation__link {
+  display: inline-block;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 1.175;
+  font-size: 36px;
+  line-height: 1.1944444444;
   letter-spacing: 0.02em;
   color: var(--first-title-color);
   transition: var(--color-tranzition);
@@ -991,8 +993,8 @@ li.features__item {
 
 .mob__tel {
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.1764705882;
+  font-size: 33px;
+  line-height: 1.2121212121;
   letter-spacing: 0.02em;
   color: var(--accent-color);
   margin-bottom: 32px;
@@ -1024,8 +1026,8 @@ li.features__item {
 
 .mob_soc-link {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2222222222;
+  font-size: 14px;
+  line-height: 1.5714285714;
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */
