@@ -14,6 +14,19 @@
 	.backdrop.is-hidden & {
 	transform: translate(-50%, 0) scale(0);
 }
+	@media screen and (max-width: 479px) {
+		width: 95vw;
+		height: 20vh;
+	}
+	@include mobile {
+		width: 450px;
+	}
+	@include tablet {
+		width: 450px;
+	}
+	@include desktop {
+		width: 528px;
+	}
 }
 
 .modal__close-buton {
@@ -46,6 +59,13 @@
 	text-align: center;
 	color: #212121;
 	margin-bottom: 12px;
+	
+	@media screen and (max-width: 479px) {
+
+	}
+	@include tablet {
+		@include third-title ($fw:700, $fs:20px, $lh:30px);
+	}
 }
 
 .input__field {
@@ -119,6 +139,15 @@
 	&:hover, &:focus {
 	background-color: #188CE8;
 }
+@media screen and (max-width: 479px) {
+		margin: 10px auto 0;
+	}
+	@include mobile { 
+		margin: 30px auto 0;
+	}
+	@include tablet { 
+		margin: 30px auto 0;
+	}
 }
 
 .modal__coments {
@@ -167,6 +196,12 @@
 	fill: var(--accent-color);
 }
 }
+	@media screen and (max-width: 479px) {
+		@include text ($fs:12px, $lh:12px)
+	}
+	@include mobile { 
+		@include text ($fs:12px, $lh:14px)
+	}
 }
 
 .input__check {
@@ -178,4 +213,11 @@
 	text-decoration-line: underline;
 	color: var(--accent-color);
 	margin-left: 3px;
+	@media screen and (max-width: 479px) {
+		@include text ($fs:12px, $lh:12px)
+	}
+	@include mobile { 
+		@include second-link( $fs:12px, $lh:14px)
+
+	}
 }
