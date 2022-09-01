@@ -129,15 +129,34 @@
 				<h2 class="offers__title title">Чим ми займаємося</h2>
 				<ul class="offers__list list">
 					<li class="offers__item">
-						<img src="./img/box1.jpg" alt="вэб дизайн" width="370" height="294" />
+						<picture>
+							<source 
+						srcset="
+						./img/box1.jpg 1x, 
+						./img/box1x2.jpg 2x" >
+						<img 
+						src="./img/box1.jpg" alt="вэб дизайн" width="370" height="294"/>
+						</picture>
 						<h3 class="offers__img-titel">Десктопні додатки</h3>
 					</li>
 					<li class="offers__item">
+						<picture>
+						<source 
+						srcset="
+						./img/box2.jpg 1x, 
+						./img/box2-x2.jpg 2x" >
 						<img src="./img/box2.jpg" alt="софт дизайн" width="370" height="294" />
-					<h3 class="offers__img-titel">Мобільні додатки</h3>
+						</picture>
+						<h3 class="offers__img-titel">Мобільні додатки</h3>
 					</li>
 					<li class="offers__item">
+						<picture>
+						<source 
+						srcset="
+						./img/box3.jpg 1x, 
+						./img/box3-x2.jpg 2x" >
 						<img src="./img/box3.jpg" alt="палітра кольорів" width="370" height="294" />
+						</picture>
 					<h3 class="offers__img-titel">Дизайнерські рішення</h3>
 					</li>
 				</ul>
@@ -149,7 +168,24 @@
 				<h2 class="team__title title">Наша команда</h2>
 				<ul class="team__list list">
 					<li class="team__item">
-						<img src="./img/photo_igor.jpg" alt="Ігорь Демьяненко" width="270" height="260" />
+						<picture>
+						<source 
+						srcset="
+						./img/photo_igor.jpg 1x, 
+						./img/photo_igor-x2.jpg 2x"
+						media="(min-width: 1200px)">
+						<source 
+						srcset="
+						./img/photo_igor-tab.jpg 1x, 
+						./img/photo_igor-tab-x2.jpg 2x"
+						media="(min-width: 768px)">
+						<source 
+						srcset="
+						./img/photo_igor-mob.jpg 1x, 
+						./img/photo_igor-mob-x2.jpg 2x"
+						media="(max-width: 767px)">
+						<img src="./img/photo_igor-tab.jpg" alt="Ігорь Демьяненко" width="450" height="460" />
+						</picture>
 						<div class="team__item-box">
 							<h3 class="team__item-title">Ігорь Демьяненко</h3>
 							<p class="team__after-title">Product Designer</p>
@@ -170,7 +206,24 @@
 						</div>
 					</li>
 					<li class="team__item">
-						<img src="./img/photo_olga.jpg" alt="Ольга Репіна" width="270" height="260" />
+						<picture>
+						<source 
+						srcset="
+						./img/photo_olga.jpg 1x, 
+						./img/photo_olga-x2.jpg 2x"
+						media="(min-width: 1200px)" >
+						<source 
+						srcset="
+						./img/photo_olga-tab.jpg 1x, 
+						./img/photo_olga-tab-x2.jpg 2x"
+						media="(min-width: 768px)">
+						<source 
+						srcset="
+						./img/photo_olga-mob.jpg 1x, 
+						./img/photo_olga-mob-x2.jpg 2x"
+						media="(max-width: 767px)">
+						<img src="./img/photo_olga.jpg" alt="Ігорь Демьяненко" width="450" height="460" />
+						</picture>
 						<div class="team__item-box">
 						<h3 class="team__item-title">Ольга Репіна</h3>
 						<p class="team__after-title">Frontend Developer</p>
@@ -191,7 +244,24 @@
 						</div>
 					</li>
 					<li class="team__item">
-						<img src="./img/photo_nikolai.jpg" alt="Микола Тарасов" width="270" height="260" />
+						<picture>
+						<source 
+						srcset="
+						./img/photo_nikolai.jpg 1x, 
+						./img/photo_nikolai-x2.jpg 2x"
+						media="(min-width: 1200px)" >
+						<source 
+						srcset="
+						./img/photo_nikolai-tab.jpg 1x, 
+						./img/photo_nikolai-tab-x2.jpg 2x"
+						media="(min-width: 768px)">
+						<source 
+						srcset="
+						./img/photo_nikolai-mob.jpg 1x, 
+						./img/photo_nikolai-mob-x2.jpg 2x"
+						media="(max-width: 767px)">
+						<img src="./img/photo_nikolai.jpg" alt="Ігорь Демьяненко" width="450" height="460" />
+						</picture>
 						<div class="team__item-box">
 						<h3 class="team__item-title">Микола Тарасов</h3>
 						<p class="team__after-title">Marketing</p>
@@ -212,7 +282,24 @@
 						</div>
 					</li>
 					<li class="team__item">
-						<img src="./img/photo_mihail.jpg" alt="Михайло Єрмаков" width="270" height="260" />
+						<picture>
+						<source 
+						srcset="
+						./img/photo_mihail.jpg 1x, 
+						./img/photo_mihail-x2.jpg 2x"
+						media="(min-width: 1200px)" >
+						<source 
+						srcset="
+						./img/photo_mihail-tab.jpg 1x, 
+						./img/photo_mihail-tab-x2.jpg 2x"
+						media="(min-width: 768px)">
+						<source 
+						srcset="
+						./img/photo_mihail-mob.jpg 1x, 
+						./img/photo_mihail-mob-x2.jpg 2x"
+						media="(max-width: 767px)">
+						<img src="./img/photo_mihail.jpg" alt="Ігорь Демьяненко" width="450" height="460" />
+						</picture>
 						<div class="team__item-box">
 						<h3 class="team__item-title">Михайло Єрмаков</h3>
 						<p class="team__after-title">UI Designer</p>
