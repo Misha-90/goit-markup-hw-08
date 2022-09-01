@@ -202,6 +202,9 @@
 	@include mobile { 
 		@include text ($fs:12px, $lh:14px)
 	}
+	@include tablet { 
+		@include text ($fs:14px, $lh:16px)
+	}
 }
 
 .input__check {
