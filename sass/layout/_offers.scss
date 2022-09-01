@@ -1,5 +1,8 @@
 .offers {
 	display: none;
+	@include desktop {
+		display: flex;
+	}
 }
 .offers__title {
 	font-weight: 700;
@@ -15,6 +18,9 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
+	@include desktop {
+		flex-wrap: nowrap;
+}
 }
 .offers__item {
 	position: relative;
@@ -35,15 +41,3 @@
 	margin: 0;
 }
 
-// .offers__mob {
-// 	position: absolute;
-// 	white-space: nowrap;
-// 	width: 1px;
-// 	height: 1px;
-// 	overflow: hidden;
-// 	border: 0;
-// 	padding: 0;
-// 	clip: rect(0 0 0 0);
-// 	clip-path: inset(50%);
-// 	margin: -1px;
-// }

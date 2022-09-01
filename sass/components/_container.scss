@@ -4,6 +4,7 @@
 	margin-right: auto;
 	padding-left: 15px;
 	padding-right: 15px;
+	@media screen and (max-width: 479px){}
 	@include mobile {
 		max-width: 480px;
 	};

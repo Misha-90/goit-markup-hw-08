@@ -48,40 +48,50 @@
 	fill: currentColor;
 }
 
-.header__contact-mail {
-	margin-right: 50px;
-}
 .header__contact {	
 	display: none;
 	margin-left: auto;
 	@include tablet {
 		display: flex;
 		flex-wrap: wrap;
-		margin-right: 0;
-		margin-left: 96px;
+		flex-direction: column;
+		margin-left: auto;
 	}
-	@include desktop {display: flex;}
+	@include desktop {
+		display: flex;
+		flex-wrap: nowrap;
+		margin-left: auto;
+		flex-direction: row;
+	}
 }
 
 .header__tel {
 	@include first-link ($fs:12px, $lh:14px);
 	color: var(--first-text-color);
-	display: flex;
 	align-items: center;
 	transition: var(--color-tranzition);
 	&:hover, &:focus {
 	color: var(--accent-color);
+}
+@include desktop {
+	display: flex;
+	margin-bottom: 0;
+	
 }
 }
 
 .header__mail {
 	@include first-link ($fs:12px, $lh:14px);
 	color: var(--first-text-color);
-	display: flex;
 	align-items: center;
 	margin-bottom: 10px;
 	transition: var(--color-tranzition);
 	&:hover, &:focus {
 	color: var(--accent-color);
+}
+@include desktop {
+	display: flex;
+	margin-bottom: 0;
+	margin-right: 10px;
 }
 }

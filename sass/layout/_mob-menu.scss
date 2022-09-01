@@ -44,6 +44,9 @@
 	&:focus, &:hover {
 	color: var(--accent-color);
 }
+    @media screen and (max-width: 479px) {
+        @include first-link ($fs:30px, $lh:37px)
+    }
 }
 
 .mob__contact-tel {
@@ -51,6 +54,9 @@
 }
 .mob__contact-mail {
     margin-bottom: 64px;
+    @media screen and (max-width: 479px) {
+        margin-bottom: 30px;
+    }
 }
 .mob__mail {
     @include first-link ($fs:24px, $lh:28px);
@@ -67,6 +73,9 @@
     margin-bottom: 32px;
     @include mobile {
         @include first-link ($fs:34px, $lh:40px);
+    }
+    @media screen and (max-width: 479px){
+        @include first-link ($fs:27px, $lh:33px)
     }
 }
 .mob__menu-btn-close {
@@ -85,12 +94,20 @@
 .mob__soc-list {
     display: flex;
     margin-bottom: 48px;
+    @media screen and (max-width: 479px) {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }
 
 .mob__soc-item:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
     padding-right: 10px;
     margin-right: 10px;
+    @media screen and (max-width: 479px) {
+        border-right: none;
+        
+    }
 }
 
 .mob_soc-link {
