@@ -5,6 +5,7 @@
 	background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/hero-bg-mob.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 	@include mobile {
 	padding: 118px 0;
 	background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/hero-bg-mob.jpg);
@@ -29,17 +30,14 @@
 	text-transform: uppercase;
 	color: var(--second-title-color);
 	@include mobile {
-		max-width: 360px;
 		@include first-title ($fs:26px, $lh:42px);
 	}
 	@include tablet {
-		max-width: 360px;
 		@include first-title ($fs:26px, $lh:42px);
 	}
 	@include desktop {
 		@include first-title ();
 		max-width: 696px;
-		
 	}
 }
 .hero__btn {

@@ -55,8 +55,7 @@
 }
 .portfolio__item {
 	box-sizing: border-box;
-	width: 370px;
-	height: 404px;
+	width: 100%;
 	&:hover .portfolio__text {
 	transform: translateY(0);
 }
