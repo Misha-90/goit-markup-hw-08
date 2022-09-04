@@ -93,12 +93,17 @@
 .footer__soc-icon {
 	fill: var(--icons-second-color);
 }
+
 .footer__logo-join-box {
 	@include tablet {
 		display: flex;
 		justify-content: space-between;
 		margin: 0 76px;
 	}
+	@include desktop {
+			justify-content: normal;
+			margin: 0;
+}
 }
 
 .subscription__box {

@@ -791,6 +791,12 @@ li.features__item {
     margin: 0 76px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__logo-join-box {
+    justify-content: normal;
+    margin: 0;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .subscription__box {
