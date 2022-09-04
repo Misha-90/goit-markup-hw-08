@@ -13,3 +13,8 @@
 }
 }
 
+.mob-navigation__link.current{
+	color: var(--accent-color);
+	position: relative;
+}
+

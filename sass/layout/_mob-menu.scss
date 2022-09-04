@@ -1,4 +1,5 @@
 .mob__menu-btn-open {
+    cursor: pointer;
 	margin-left: auto;
 	padding: 0;
 	border: none;
@@ -33,6 +34,7 @@
 .mob-navigation__item:not(:last-child) {
 	margin-bottom: 32px;
 }
+
 .mob-navigation__list {
     margin-bottom: 64px;
 }
@@ -96,7 +98,6 @@
     margin-bottom: 48px;
     @media screen and (max-width: 479px) {
         flex-wrap: wrap;
-        flex-direction: column;
     }
 }
 
@@ -105,13 +106,12 @@
     padding-right: 10px;
     margin-right: 10px;
     @media screen and (max-width: 479px) {
-        border-right: none;
         
     }
 }
 
 .mob_soc-link {
-    @include first-link ($fs:14px, $lh:22px);
+    @include first-link ($fs:12px, $lh:20px);
     color: var(--accent-color);
     @include mobile {
         @include first-link ($fs:18px, $lh:22px);

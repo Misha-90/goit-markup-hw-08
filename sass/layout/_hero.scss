@@ -19,6 +19,7 @@
 	@include desktop {
 		padding: 200px 0;
 		background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
+		background-size: 1600px;
 		@include retina {background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/hero-bg-x2.jpg);}
 }
 }

@@ -11,7 +11,10 @@
 	align-items: center;
 	max-width: 134px;
 	max-height: 28px;
-	@include mobile {};
+	margin: 16px 0;
+	@include mobile {
+		margin: 16px 0;
+	};
 	@include tablet {	margin-right: 87px;};
 	@include desktop {	margin-right: 93px;};
 }
@@ -79,6 +82,15 @@
 	
 }
 }
+.header__contact-mail{
+	@include tablet{
+	margin-bottom: 10px;
+	}
+	@include desktop {
+		margin-bottom: 0;
+	}
+}
+
 
 .header__mail {
 	@include first-link ($fs:12px, $lh:14px);
