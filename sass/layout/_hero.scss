@@ -20,6 +20,8 @@
 		padding: 200px 0;
 		background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
 		background-size: 1600px;
+		max-width: 1600px;
+		margin: 0 auto;
 		@include retina {background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/hero-bg-x2.jpg);}
 }
 }
@@ -45,4 +47,5 @@
 	display: block;
 	margin: 30px auto 0;
 	min-width: 216px;
-	@include btn ();}
+	@include btn ();
+}

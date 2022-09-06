@@ -105,7 +105,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .section {
-    max-width: 1600px;
     padding: 94px 0;
   }
 }
@@ -355,6 +354,8 @@ body {
     padding: 200px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
     background-size: 1600px;
+    max-width: 1600px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
