@@ -16,7 +16,7 @@
 }
 	@media screen and (max-width: 479px) {
 		width: 95vw;
-		height: 20vh;
+		padding: 25px;
 	}
 	@include mobile {
 		width: 450px;
@@ -55,7 +55,7 @@
 }
 
 .modal__titel {
-	@include third-title ($fw:700, $fs:20px, $lh:23px);
+	@include third-title ($fw:700, $fs:16px, $lh:19px);
 	text-align: center;
 	color: #212121;
 	margin-bottom: 12px;
@@ -140,7 +140,7 @@
 	background-color: #188CE8;
 }
 @media screen and (max-width: 479px) {
-		margin: 10px auto 0;
+		margin: 30px auto 0;
 	}
 	@include mobile { 
 		margin: 30px auto 0;
@@ -197,7 +197,7 @@
 }
 }
 	@media screen and (max-width: 479px) {
-		@include text ($fs:12px, $lh:12px)
+		@include text ($fs:7px, $lh:7px)
 	}
 	@include mobile { 
 		@include text ($fs:12px, $lh:14px)
@@ -217,7 +217,7 @@
 	color: var(--accent-color);
 	margin-left: 3px;
 	@media screen and (max-width: 479px) {
-		@include text ($fs:12px, $lh:12px)
+		@include text ($fs:8px, $lh:8px)
 	}
 	@include mobile { 
 		@include second-link( $fs:12px, $lh:14px)

@@ -105,6 +105,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .section {
+    max-width: 1600px;
     padding: 94px 0;
   }
 }
@@ -314,7 +315,7 @@ body {
   .header__mail {
     display: flex;
     margin-bottom: 0;
-    margin-right: 10px;
+    margin-right: 30px;
   }
 }
 
@@ -1070,7 +1071,7 @@ li.features__item {
 @media screen and (max-width: 479px) {
   .modal {
     width: 95vw;
-    height: 20vh;
+    padding: 25px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1116,8 +1117,8 @@ li.features__item {
 
 .modal__titel {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  font-size: 16px;
+  line-height: 1.1875;
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
@@ -1213,7 +1214,7 @@ li.features__item {
 }
 @media screen and (max-width: 479px) {
   .modal__button {
-    margin: 10px auto 0;
+    margin: 30px auto 0;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1283,7 +1284,7 @@ li.features__item {
 @media screen and (max-width: 479px) {
   .input__check-text {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 7px;
     line-height: 1;
     letter-spacing: 0.03em;
   }
@@ -1321,7 +1322,7 @@ li.features__item {
 @media screen and (max-width: 479px) {
   .policy-link {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 8px;
     line-height: 1;
     letter-spacing: 0.03em;
   }
